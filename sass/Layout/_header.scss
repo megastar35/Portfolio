@@ -1,0 +1,19 @@
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+// #header.sticky {
+//     #navbar{
+//         ul li a{
+//             color: white;
+//         }
+//     }
+// }

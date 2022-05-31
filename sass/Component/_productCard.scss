@@ -1,0 +1,135 @@
+.productCard {
+    margin: auto;
+    height: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    // margin-bottom: 20px;
+    // background: $color-white;
+    display: flex;
+    justify-content: center;
+    box-shadow: -1px 16px 19px -14px rgba(0,0,0,0.47);
+    -webkit-box-shadow: -1px 16px 19px -14px rgba(0,0,0,0.47);
+    -moz-box-shadow: -1px 16px 19px -14px rgba(0,0,0,0.47);
+    .card_img {
+        position: relative;
+        background: url(../../img/bookingmovieticket_page.PNG);
+        width: 60%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .card_detail {
+        padding: 20px;
+        width: 40%;
+        background: $color-white;
+        font-size: $fs-0;
+        .title {
+            font-weight: $fw-bold;
+            margin-bottom: 10px;
+            font-size: $fs-2;
+            color: $color-blue-2;
+            margin-bottom: 20px;
+        }
+        p {
+            display: flex;
+            margin-bottom: 5px;
+            span {
+                font-size: $fs-0 !important;
+                color: $color-blue-1;
+            }
+        }
+        .detail_title {
+            margin-right: 5px;
+            color: $color-blue-2;
+            font-weight: $fw-bold;
+        }
+        .btn {
+            margin-top: 30px;
+            border: 20px;
+            background-color: var(--clr);
+            text-transform: capitalize;
+            a {
+                color: $color-white;
+            }
+        }
+    }
+    // &::before {
+    //     content: "";
+    //     height: 150px;
+    //     width: 150px;
+    //     position: absolute;
+    //     z-index: 0;
+    //     bottom: -2.5%;
+    //     right: -3%;
+    //     border-radius: 0 0 2px 0;
+    //     border-bottom: 4px solid $color-blue-1;
+    //     border-right: 4px solid $color-blue-1;
+    //     opacity: 0;
+    //     animation: fadeOutRight 0.2s linear forwards;
+    // }
+    // &::after {
+    //     content: "";
+    //     height: 150px;
+    //     width: 150px;
+    //     position: absolute;
+    //     z-index: 0;
+    //     top: -2.5%;
+    //     left: -3%;
+    //     border-radius: 0 0 2px 0;
+    //     border-top: 4px solid $color-blue-1;
+    //     border-left: 4px solid $color-blue-1;
+    //     animation: fadeOutLeft 0.2s linear forwards;
+    // }
+    // &:hover {
+    //     img{
+    //         opacity: 0.8;
+    //     }
+    //     &::before {
+    //         animation: fadeInRight .5s linear forwards;
+    //     }
+    //     &::after {
+    //         animation: fadeInLeft .5s linear forwards;
+    //     }
+    // }
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(20%, 10%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-10%, -10%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(-10%, -10%, 0);
+    }
+}
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(10%, 10%, 0);
+    }
+}

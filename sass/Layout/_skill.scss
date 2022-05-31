@@ -1,0 +1,130 @@
+#skill {
+    background: $color-background;
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    .skill_content_moblie {
+        display: none;
+    }
+    .skill_content {
+        display: block;
+        position: relative;
+        transition: 2s;
+        min-height: 810px;
+        &:hover {
+            .skillBar {
+                transition: all 0.3s ease-out;
+                transform: scale(0.9);
+                filter: blur(2px);
+                &:hover {
+                    transform: scale(1);
+                    filter: none;
+
+                    .item {
+                        display: block;
+                    }
+                }
+                .item {
+                    display: none;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}
+
+@include Responsive(MD) {
+    .skill_content {
+        display: none !important;
+    }
+    .skill_content_moblie {
+        display: block !important;
+        .skillName {
+            padding: 20px 30px;
+            text-align: center;
+            font-size: $fs-2;
+            font-weight: $fw-bold;
+            width: 100%;
+        }
+        .skillBar {
+            display: block;
+            .collapsible-body {
+                display: none !important;
+            }
+            .skillItem {
+                .item {
+                    position: relative;
+                    width: 45%;
+                    height: 55px;
+                    border: 2px solid $color-blue-2;
+                    border-radius: 40px;
+                    margin-right: 10px;
+                    text-align: center;
+                    margin-bottom: 15px;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        padding: 5px;
+                        object-fit: contain;
+                    }
+                    .skill_text {
+                        line-height: 50px;
+                        font-size: $fs-0 - 2;
+                        color: $color-blue-2;
+                        font-weight: $fw-bold-0;
+                    }
+                    .item_long {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+        .skillBar.active {
+            border: 1px solid;
+            box-shadow: -1px 2px 15px 1px rgba(255, 255, 255, 0.75);
+            -webkit-box-shadow: -1px 2px 15px 1px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: -1px 2px 15px 1px rgba(255, 255, 255, 0.75);
+            .skillItem {
+                display: flex !important;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 10px;
+                .item {
+                    position: relative;
+                    width: 45%;
+                    height: 55px;
+                    border: 2px solid $color-blue-2;
+                    border-radius: 40px;
+                    margin-right: 10px;
+                    text-align: center;
+                    margin-bottom: 15px;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        padding: 5px;
+                        object-fit: contain;
+                    }
+                    .skill_text {
+                        line-height: 50px;
+                        font-size: $fs-0 - 2;
+                        color: $color-blue-2;
+                        font-weight: $fw-bold-0;
+                    }
+                }
+            }
+            .item.item_long {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+.collapsible {
+    border: none;
+    box-shadow: none;
+    .collapsible-header {
+        background-color: transparent;
+        border: none;
+    }
+}
