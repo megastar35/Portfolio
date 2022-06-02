@@ -1,5 +1,11 @@
 const getElementByID = (id) => document.getElementById(id);
 
+
+//HEADER ON SCROLL 
+window.addEventListener("scroll", function () {
+  const header = getElementByID("header");
+  header.classList.toggle("sticky", window.scrollY > 0)
+})
 // TOGGLE // 
 document.onclick = function (e) {
   if (e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar') {
@@ -14,8 +20,6 @@ getElementByID("toggle").onclick = function () {
   getElementByID("toggle").classList.toggle('active');
   getElementByID("navbar").classList.toggle('active');
   navbarItem.classList.toggle('active');
-
-
 }
 // for (let i = 0; i < navbarItem.length; i++) {
 //   navbarItem[i].onclick = function () {
@@ -48,25 +52,25 @@ tabs.forEach(tab => {
 })
 //ScrollSpy//
 //VANILLA JS//
-let section = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("header #navbar ul li a");
+// let section = document.querySelectorAll("section");
+// let navLinks = document.querySelectorAll("header #navbar ul li a");
 
-window.onscroll = () => {
-  section.forEach(sec => {
+// window.onscroll = () => {
+//   section.forEach(sec => {
 
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute('id');
+//     let top = window.scrollY;
+//     let offset = sec.offsetTop - 150;
+//     let height = sec.offsetHeight;
+//     let id = sec.getAttribute('id');
 
-    if (top > offset && top < offset + height) {
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        document.querySelector("header #navbar ul li a[href*=" + id + "]").classList.add("active");
-      });
-    }
-  })
-}
+//     if (top > offset && top < offset + height) {
+//       navLinks.forEach(link => {
+//         link.classList.remove("active");
+//         document.querySelector("header #navbar ul li a[href*=" + id + "]").classList.add("active");
+//       });
+//     }
+//   })
+// }
 
 
 

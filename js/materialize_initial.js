@@ -1,10 +1,10 @@
-// //MATERIALIZE CSS//
-// document.addEventListener('DOMContentLoaded', function () {
-//     var elems = document.querySelectorAll('.scrollspy');
-//     var instances = M.ScrollSpy.init(elems, { activeClass: "active" });
-// });
+//MATERIALIZE CSS//
+document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, { throttle: 0, });
+});
 
-// add ACTIVE CLASS in skillbar section
+
 
 // TOOLTIPS
 document.addEventListener('DOMContentLoaded', function () {
@@ -15,4 +15,4 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems);
-  });
+});

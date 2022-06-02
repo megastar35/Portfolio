@@ -1,5 +1,5 @@
 #portfolio {
-     background: url("../../img/wave2_bg.png") no-repeat;
+     background: url("../../assets/img/wave2_bg.png") no-repeat;
     .heading {
         color: $color-white;
     }
@@ -9,39 +9,10 @@
     }
     .portfolio_content {
         position: relative;
-        // width: 100%;
-        // display: grid;
-        // grid-template-columns: 1fr 1fr 1fr;
         height: 600px;
-    }
-}
-@include Responsive(MD) {
-    .productCard{
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        padding: 50px;
-        .card_img{
-            width: 100%;
-            height: 50%;
-        }
-        .card_detail{
-            width: 100%;
-            height: 50%;
-        }
     }
 }
-@include Responsive(SM) {
-    .productCard{
-        padding: 20px;
-        .card_img{
-            display: none;
-        }
-        .card_detail{
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
+
 
