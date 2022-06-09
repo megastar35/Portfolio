@@ -20,7 +20,14 @@
 
 </head>
 
-<body>
+<body class="preloading">
+    <div id="preloader" class="preloader_container animate__animated">
+        <div class="content animate__animated animate__rotateIn">
+
+        </div>
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
     <div class="scrollTop" onclick="scrollToTop()">
         <i class="fa-solid fa-angle-up"></i>
     </div>
@@ -45,16 +52,16 @@
     <!-- HOME -->
     <section id="home" class="scrollspy">
         <div class="container">
-            <div class="content  animate__animated animate__fadeIn delay-4 wow">
+            <div class="content  animate__animated animate__fadeIn wow animate__delay-4s">
                 <div class="home_data ">
                     <h2>Hi, I'm Lieu Dung Tri </h2>
                     <h1> I'm a Front-end Developer</h1>
                     <p class="home_description">
                         Have experience in web design and development knowledge
                         <br>
-                        Graduated from Ton Duc Thang University in 2020. Atfer graduate I've decided to become a
-                        Front-end
-                        Developer so I took Front-end course at CyberSoft Academy
+                        I have a patience and responsibility for the assigned work. I'm also takes the time to
+                        learn new knowledges and technologies to improve my skills. Hope that I can contribute a part to
+                        the development of your company.
                     </p>
 
                     <button class="waves-effect waves-light btn">
@@ -574,9 +581,7 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <!-- WOW -->
     <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
 

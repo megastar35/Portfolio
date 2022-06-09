@@ -1382,6 +1382,36 @@ section {
           justify-content: center;
 }
 
+.preloading {
+  overflow: hidden;
+}
+
+.preloader_container {
+  background-color: #e3f6f4;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999999;
+  overflow: hidden;
+}
+
+.preloader_container .content {
+  background: url("../../assets/img/logo2.PNG") center no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
 .clayMorphism {
   background: #fff;
   -webkit-box-shadow: 25px 25px 50px rgba(9, 148, 255, 0.25), -10px -10px 30px rgba(12, 104, 224, 0.486), inset -5px -5px -10px rgba(9, 148, 255, 0.5);

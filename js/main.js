@@ -1,4 +1,5 @@
 const getElementByID = (id) => document.getElementById(id);
+new WOW().init();
 
 
 //HEADER ON SCROLL 
@@ -73,16 +74,23 @@ tabs.forEach(tab => {
 // }
 
 
+window.onload = () => {
+  setTimeout(() => {
+    document.querySelector("body").classList.remove('preloading');
 
+
+  }, 4000);
+  setTimeout(() => {
+    getElementByID("preloader").classList.add("animate__fadeOut");
+  }, 3000);
+  setTimeout(() => {
+    getElementByID("preloader").style.display = "none";
+  }, 4000);
+}
 
 
 // SWIPER //
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // observer: true,
-  // observeParents: true,
-  // slidesPerView: 1,
-  // spaceBetween: 30,
   loop: true,
 
   // If we need pagination
